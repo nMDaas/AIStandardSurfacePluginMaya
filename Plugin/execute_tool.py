@@ -7,16 +7,16 @@ import sys
 
 #SET THIS FOLDER to the parent folder that you've downloaded the repository to
 #or ensure that the parent folder is added to your PYTHONPATH
-folder = '/Users/natashadaas'
+folder = '/Users/natashadaas/AIStandardSurfacePluginMaya'
 
 #check if folder is part of PYTHONPATH and if not, add it
 if folder not in sys.path:
     sys.path.append(folder)
 
-if 'AIStandardSurfacePluginMaya' in sys.modules:
-    del sys.modules['AIStandardSurfacePluginMaya']
-if 'AIStandardSurfacePluginMaya.shader_plugin' in sys.modules:
-    del sys.modules['AIStandardSurfacePluginMaya.shader_plugin']
-import AIStandardSurfacePluginMaya.shader_plugin
+if 'Plugin' in sys.modules:
+    del sys.modules['Plugin']
+if 'Plugin.shader_plugin' in sys.modules:
+    del sys.modules['Plugin.shader_plugin']
+import Plugin.shader_plugin
 
-window = AIStandardSurfacePluginMaya.shader_plugin.showWindow()
+window = Plugin.shader_plugin.showWindow()

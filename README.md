@@ -14,7 +14,7 @@ Some of these inefficiencies are:
  * Allows selection of desired folder of textures
  * Allows you to select an object, group of objects, or nested group of objects
  * Creates as many AI Standard Surface textures as contained in the folder selected 
- * Automatically assigns newly created materials to correct objects
+ * Automatically assigns newly created materials to correct objects (disregards objects for which textures have not been created)
 
 ## How To Use
 * Download code and separate Plugin folder in the downloaded folder
@@ -24,8 +24,13 @@ Some of these inefficiencies are:
 
 ## Plugin Usage Details
  * While exporting texture files from Adobe Substance Painter, make sure you export the files with default names given by the program. Do NOT change these file names to something custom
- * For each texture in the folder, there must be a file for BaseColor, Roughness, Metalness, Height and Normal
+ * The texture files should be in a folder that has the same name as the object or group node with nested objects
+ * For each texture in the folder, there must be a file for BaseColor, Roughness, Metalness, Height and Normal:
+<img src="https://github.com/nMDaas/AIStandardSurfaceSubstancePainterPluginMaya/blob/main/images/UVsFileStructureAndScene.jpg" alt="drawing" width="500"/>
  * After following the tool instructions and clicking 'Apply', if you realize you have to reimport the textures, undo. Make sure the material has been removed from the object and that the materials are gone from the Hypershade
+
+## Tool Demo: https://youtu.be/aWO6ljt24VA
+Click the link above to see a demo.
 
  ## Troubleshooting: Materials Created but Have No File Textures Applied or Node/Texture not Found
  * Go to one of the newly created AI Standard Surface materials
@@ -42,7 +47,3 @@ Some of these inefficiencies are:
     - Click Optimize
     - Click OK 
 * Rerun the plugin the same way. You might also need to repeat the instructions in the section above
-
-## Tool Demo:  
-
-### Demo #1: https://youtu.be/xSYAs8dseuE

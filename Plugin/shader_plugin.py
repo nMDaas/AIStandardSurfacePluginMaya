@@ -299,6 +299,7 @@ def showWindow():
 
     def get_material(mat_name, uv_bounding_box):
         mat_name = mat_name.replace(" ", "")
+        print("mat_name: ", mat_name)
         uv_bounding_box = str(uv_bounding_box)
         uv_bounding_box = uv_bounding_box.replace(" ", "")
         materials = cmds.ls(materials=True)
@@ -312,6 +313,10 @@ def showWindow():
         cmds.select(obj, replace=True)
         bounding_box = get_uv_bounding_box(obj)
         material = get_material(material_name,bounding_box)
+        print("obj: ", obj)
+        print("material_name: ", material_name)
+        print("material: ", material)
+        print("...")
         
         # Assign the shader to selected object
         cmds.hyperShade(assign=material)
@@ -340,6 +345,7 @@ def showWindow():
             ui.warnings.setText("Must select a folder path to folder textures")
         else:
             mat_name = create_textures()
+            print("mat_name: ", mat_name)
             apply_textures(selectedObject, mat_name)
 
     #connect buttons to functions

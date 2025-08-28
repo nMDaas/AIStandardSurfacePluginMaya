@@ -3,7 +3,7 @@ This plugin was developed to address the problems with the default Adobe Substan
 
 ## Overview
 Tool improves texture transfer from Adobe Substance Painter into Maya
-- Eliminated the tedious task of creating and assigning multiple AI Standard Surface textures to multiple objects or UV shells through bulk node creation and import of texture files from Adobe Substance Painter.
+- Eliminated the tedious task of creating and assigning multiple AI Standard Surface textures to multiple objects or UV shells using Python, Qt and MEL Scripting via bulk node creation from texture files from Adobe Substance Painter.
 - Increased efficiency by 90% in creating AI Standard Surface materials for Maya by designing a plugin that automates the import of texture files, node creation, and material assignment from Adobe Substance Painter.
 
 

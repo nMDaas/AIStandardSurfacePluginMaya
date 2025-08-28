@@ -1,7 +1,14 @@
 # AI Standard Surface Substance Painter Plugin
 This plugin was developed to address the problems with the default Adobe Substance Painter used in Maya.
 
-The default plugin is not a huge problem if you have 1-2 objects with few UV shells. However, using the plugin becomes extremely inefficient if you have multiple objects or a group of objects with multiple shells. 
+## Overview
+Tool improves texture transfer from Adobe Substance Painter into Maya
+- Eliminated the tedious task of creating and assigning multiple AI Standard Surface textures to multiple objects or UV shells through bulk node creation and import of texture files from Adobe Substance Painter.
+- Increased efficiency by 90% in creating AI Standard Surface materials for Maya by designing a plugin that automates the import of texture files, node creation, and material assignment from Adobe Substance Painter.
+
+
+## Introduction
+The default plugin to create AI Standard Surface textures is not a huge problem if you have 1-2 objects with few UV shells. However, using the plugin becomes extremely inefficient if you have multiple objects or a group of objects with multiple shells. 
 
 Some of these inefficiencies are:
 * The default plugin only allows you to create one material at a time. If you have a plant group object with 1 stem, 1 pot, 1 soil object, 5 leaves, and 5 stems, you are forced to repeat the same material process creation 13 times

@@ -1,4 +1,4 @@
-# AI Standard Surface Substance Painter Plugin
+# AI Standard Surface Pipeline Tool (Substance Painter → Maya) 
 This plugin was developed to address the problems with the default Adobe Substance Painter used in Maya.
 
 ## Overview
